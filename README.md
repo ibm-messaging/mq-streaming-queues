@@ -4,6 +4,8 @@
 
 You configure the feature on a queue-by-queue basis. For more information you can read [the blog article](https://community.ibm.com/community/user/integration/blogs/matthew-whitehead1/2021/07/26/new-streaming-queue-feature-for-mq-923) that accompanied the release or [the IBM Documentation pages](https://www.ibm.com/docs/en/ibm-mq/9.2?topic=scenarios-streaming-queues).
 
+![Streaming Queues diagram](stream-q-scenario.png?raw=true "Streaming Queues diagram")
+
 ## Demo
 
 This repository provides a script you can use to run through the stream queue configuration steps and is accompanied by a video that was created using the scripts.
