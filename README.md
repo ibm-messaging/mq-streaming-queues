@@ -2,9 +2,9 @@
 
 **IBM MQ 9.2.3 CD release** we introduced the new Streaming Queue feature. Streaming Queues provide a way to create a stream of duplicate messages from an existing queue. When a message is put to the original queue a near-identical duplicate message is delivered to the stream queue. You can then consume the stream queue messages without affecting the original application.
 
-You configure the feature on a queue-by-queue basis. For more information you can read [the blog article](https://community.ibm.com/community/user/integration/blogs/matthew-whitehead1/2021/07/26/new-streaming-queue-feature-for-mq-923) that accompanied the release or [the IBM Documentation pages](https://www.ibm.com/docs/en/ibm-mq/9.2?topic=scenarios-streaming-queues).
-
 ![Streaming Queues diagram](stream-q-scenario.png?raw=true "Streaming Queues diagram")
+
+You configure the feature on a queue-by-queue basis. For more information you can read [the blog article](https://community.ibm.com/community/user/integration/blogs/matthew-whitehead1/2021/07/26/new-streaming-queue-feature-for-mq-923) that accompanied the release or [the IBM Documentation pages](https://www.ibm.com/docs/en/ibm-mq/9.2?topic=scenarios-streaming-queues).
 
 ## Demo
 
