@@ -1,6 +1,6 @@
 # mq-streaming-queues
 
-**IBM MQ 9.2.3 CD release** we introduced the new Streaming Queue feature. Streaming Queues provide a way to create a stream of duplicate messages from an existing queue. When a message is put to the original queue a near-identical duplicate message is delivered to the stream queue. You can then consume the stream queue messages without affecting the original application.
+In the **IBM MQ 9.2.3 CD release** we introduced the new Streaming Queue feature. Streaming Queues provide a way to create a stream of duplicate messages from an existing queue. When a message is put to the original queue a near-identical duplicate message is delivered to the stream queue. You can then consume the stream queue messages without affecting the original application.
 
 ![Streaming Queues diagram](stream-q-scenario.png?raw=true "Streaming Queues diagram")
 
