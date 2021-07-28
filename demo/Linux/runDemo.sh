@@ -14,12 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Create three queue managers in a single Uniform Cluster
-# Each queue manager is based off the same configuration files
-# Each queue manager listens on a unique port and is specified at create time
-
-# The config files are located in the ./QMConfig directory relative to the
-# location of this script
+# Runs through a set up steps that demonstrate how streaming queues work.
 
 # Call runmqsc but remove some of the noise in the output
 cleanRunmqsc()
