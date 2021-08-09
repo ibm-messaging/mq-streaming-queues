@@ -10,7 +10,7 @@ You configure the feature on a queue-by-queue basis. For more information you ca
 
 This repository provides a script you can use to run through the stream queue configuration steps and is accompanied by a video that was created using the scripts.
 
-To try the demo, navigate to the demo/Linux directory and launch the runDemo.sh script. The script creates a new queue manager and assumes you have your terminal set up with an MQ 9.2.3 environment.
+To try the demo, navigate to the demo directory and launch the runDemo.sh script. The script creates a new queue manager and assumes you have your terminal set up with an MQ 9.2.3 environment.
 
 ## License
 
