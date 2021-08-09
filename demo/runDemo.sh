@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Runs through a set up steps that demonstrate how streaming queues work.
+# Runs through a set of steps that demonstrate how streaming queues work.
 
 # Call runmqsc but remove some of the noise in the output
 cleanRunmqsc()
