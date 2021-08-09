@@ -20,7 +20,7 @@
 cleanRunmqsc()
 {
     echo
-    echo "$1" | runmqsc -e DEMO_QM | egrep -v "Starting MQSC|Copyright" | sed '/^$/d'
+    echo "$1" | runmqsc DEMO_QM | egrep -v "Starting MQSC|Copyright|MQSC commands*" | sed '/^$/d'
 }
 
 echo "*****************************************************************************"
@@ -29,6 +29,26 @@ echo "some streaming queue demos. It relies on you having MQ_INSTALLATION_PATH s
 echo "the MQ samples installed to MQ_INSTALLATION_PATH/samp/bin                    "
 echo "*****************************************************************************"
 read -p "Press any key to continue, or Ctrl-C to exit"
+
+if command -v dspmqver >/dev/null 2>&1
+then
+  MQVERSION=`dspmqver -f 2 -b`
+  if [[ "$MQVERSION" < "9.2.3.0" ]]; then
+    echo
+    echo "**********************************************************"
+    echo "Please make sure you have IBM MQ 9.2.3 or higher installed"
+    echo "(Your version = $MQVERSION)                               "
+    echo "**********************************************************"
+    exit 1
+  fi
+else
+    echo
+    echo "**********************************************************"
+    echo "Please make sure you have IBM MQ 9.2.3 or higher installed"
+    echo "and have the MQ commands on your PATH.                    "
+    echo "**********************************************************"
+    exit 1
+fi
 
 crtmqm DEMO_QM
 
